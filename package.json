@@ -7,8 +7,11 @@
     "experiment": "babel-node bin/experiment.js"
   },
   "dependencies": {
+    "atomic-sleep": "^1.0.0",
     "esm": "^3.2.25",
     "lodash": "^4.17.20",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
     "threads": "^1.6.3"
   },
   "devDependencies": {

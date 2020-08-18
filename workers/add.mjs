@@ -10,7 +10,7 @@ import fnAdd from '../functions/add.mjs';
 // );
 
 expose(
-  function add(a, b) {
-    return _.sum([fnAdd(a, b), fnAdd(a, b)]);
+  function (a, b) {
+    return _.sum([fnAdd(a, b)]);
   }
 );

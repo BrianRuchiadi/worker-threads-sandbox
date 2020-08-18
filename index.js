@@ -4,5 +4,4 @@ require = require("esm")(module, {
   "mode": "auto",
   "await": true
 })
-console.log('___ CCB');
 module.exports = require("./bin/start.js")
