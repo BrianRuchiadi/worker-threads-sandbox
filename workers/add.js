@@ -1,9 +1,10 @@
 import _ from "lodash";
 import { expose } from "threads/worker";
-import fnAdd from '../functions/add.mjs';
+import fnAdd from '../functions/add.js';
 
 expose(
-  function add(a, b) {
-    return _.sum([fnAdd(a, b), fnAdd(a, b)]);
+  function (a, b) {
+    console.log('[In Worker] Test A', a ?? b);
+    return _.sum([fnAdd(a, b)]);
   }
 );
