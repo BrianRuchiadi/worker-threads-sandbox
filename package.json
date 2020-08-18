@@ -2,9 +2,9 @@
   "name": "worker-threads-sandbox",
   "version": "1.0.0",
   "description": "",
-  "type_________": "module",
   "scripts": {
-    "start": "babel-node bin/start.js --harmony-top-level-await --experimental-worker"
+    "start": "babel-node bin/start.js --harmony-top-level-await --experimental-worker",
+    "experiment": "babel-node bin/experiment.js"
   },
   "dependencies": {
     "esm": "^3.2.25",
