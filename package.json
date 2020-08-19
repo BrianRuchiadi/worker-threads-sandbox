@@ -2,8 +2,12 @@
   "name": "worker-threads-sandbox",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
+  "runtimeArgs": [
+    "--preserve-symlinks"
+  ],
   "scripts": {
-    "start": "babel-node bin/start.js --harmony-top-level-await --experimental-worker",
+    "start": "node bin/start.js --harmony-top-level-await --experimental-worker --experimental-modules",
     "experiment": "babel-node bin/experiment.js"
   },
   "dependencies": {
